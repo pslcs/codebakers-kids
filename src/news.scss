@@ -1,0 +1,197 @@
+*{
+  box-sizing: border-box;
+}
+  body, html {
+  margin: 0px;
+  padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 100%;
+  overflow-x: hidden
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.content, .relatedNews{
+  width: 1100px;
+  margin: 0px auto;
+  display: flex;
+}
+.articles{
+  width: 75%;
+  // background-color: whitesmoke;
+  height: 100%;
+}
+.localNavigation{
+  width: 25%;
+  height: 100%;
+}
+.latestPosts, .newsCategories, .currentPrograms{
+  text-align: center;
+  padding: 10px;
+  width: 80%;
+  border: 1px solid grey;
+  min-height: 250px;
+  margin: 10%;
+}
+.card{
+  width: 90%;
+  height: 200px;
+  margin: 15px;
+}
+.flex{
+  display: flex;
+}
+.cardIMG{
+  max-width: 35%;
+  max-height: 100%;
+  object-fit: contain; 
+}
+.cardContent{
+  padding: 5px;
+}
+#title{
+  text-align: center;
+  margin: 50px;
+}
+li{
+  text-align: left;
+}
+.titleImage{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+#olympusList{
+  font-size: 14pt;
+}
+#register{
+  border-radius: 15px;
+  background-color: grey;
+  color: white;
+  border: none;
+  height: 30px;
+  &:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  } 
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.relatedNews{
+  width: 45%;
+  min-height: 100px;
+}
+.relatedNewsCards{
+  width: 32%;
+  min-height: 200px;
+  margin: 1%;
+}
+.relatedNewsCardsIMG{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.imgContainer{
+  min-height: 180px;
+  width: auto;
+}
+.text{
+  display: block;
+}
+.titles{
+  text-align: center;
+}
+.blue{
+  color: #00ADEF;
+}
+#link{
+  text-decoration: underline;
+}
+.columnholder{
+  width: 100%;
+  display: flex;
+}
+.column{
+  width: 50%;
+}
+.nuotrauka{
+  width: 40%;
+  margin-left: 5%;
+  color: rgb(126, 126, 126);
+}
+@media screen and (max-width: 1200px){
+  .content, .relatedNews{
+    width: 900px;
+  }
+}
+@media screen and (max-width: 900px){
+  .content, .relatedNews{
+    width: 640px;
+    margin: 0px auto;
+  }
+  .card{
+   width: 400px;
+   max-height: 800px;
+   height: auto;
+   display: block;
+  }
+  .cardIMG{
+    width: 400px;
+    max-width: 100%;
+  }
+  .cardContent{
+    width: 400px;
+  }
+  .newsCategories, .localNavigation{
+    width: 170px;
+    padding: 5px;
+  }
+  .currentPrograms, .latestPosts{
+    width: 170px;
+    margin: 10% 0px 0px 0px;
+  }
+  ul{
+    padding-left: 20px;
+  }
+  .articles{
+    width: 450px;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 680px){
+  .content, .relatedNews{
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: block;
+  }
+  .articles{
+    width: 80%;
+  }
+  .card{
+    width: 95%;
+  }
+  .cardIMG{
+    width: 95%;
+  }
+  .cardContent{
+    width: 95%;
+  }
+  .relatedNews, .currentPrograms, .localNavigation, .latestPosts{
+    width: 80%;
+    min-height: 100px;
+  }
+  .relatedNewsCards{
+    width: 80%;
+    margin-bottom: 50px;
+  }
+}
